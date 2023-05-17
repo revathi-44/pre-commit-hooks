@@ -1,0 +1,32 @@
+##### section - doit
+[tool.doit]
+backend = "json"
+dodoFile = ".assets/doit/__init__.py"
+[tool.doit.config]
+default_tasks = []
+#####
+
+[tool.poetry]
+name = "soluble_start"
+version = "0.1.0"
+description = "A Soluble solution accelerator"
+authors = ["Nick Garber <txa6gknyr@mozmail.com>"]
+license = "GPLv3+"
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+#poetry = "*"
+doit = "^0.36.0"
+pre-commit = "^3.2.2"
+
+[tool.poetry.group.dev.dependencies]
+doit = "^0.36.0"
+commitizen = "^2.37.0"
+cruft = "^2.11.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
